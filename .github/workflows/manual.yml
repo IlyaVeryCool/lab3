@@ -27,3 +27,5 @@ jobs:
 
       - name: Run tests
         run: pytest
+    env:
+      API_KEY: ${{ secrets.API_KEY }}  # Использование секрета
