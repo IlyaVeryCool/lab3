@@ -27,5 +27,9 @@ jobs:
 
       - name: Run tests
         run: pytest
+        
+      - name: Run linters (Flake8)
+        run: flake8 .
+        
     env:
       API_KEY: ${{ secrets.API_KEY }}  # Использование секрета
